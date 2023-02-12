@@ -5,7 +5,7 @@ description = ""
 authors = ["jpsmithnl <jp.smith@mun.ca>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 drawSvg = "^1.9.0"
 pycairo = {url = "https://download.lfd.uci.edu/pythonlibs/archived/pycairo-1.21.0-cp310-cp310-win_amd64.whl"}
 weasyprint = "^57.2"
