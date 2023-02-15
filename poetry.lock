@@ -854,45 +854,6 @@ test = ["fsspec[github]", "invoke", "pytest", "pytest-cov"]
 tifffile = ["tifffile"]
 
 [[package]]
-name = "importlib-metadata"
-version = "6.0.0"
-description = "Read metadata from Python packages"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "importlib_metadata-6.0.0-py3-none-any.whl", hash = "sha256:7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad"},
-    {file = "importlib_metadata-6.0.0.tar.gz", hash = "sha256:e354bedeb60efa6affdcc8ae121b73544a7aa74156d047311948f6d711cd378d"},
-]
-
-[package.dependencies]
-zipp = ">=0.5"
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
-perf = ["ipython"]
-testing = ["flake8 (<5)", "flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pyfakefs", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)", "pytest-perf (>=0.9.2)"]
-
-[[package]]
-name = "importlib-resources"
-version = "5.10.2"
-description = "Read resources from Python packages"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "importlib_resources-5.10.2-py3-none-any.whl", hash = "sha256:7d543798b0beca10b6a01ac7cafda9f822c54db9e8376a6bf57e0cbd74d486b6"},
-    {file = "importlib_resources-5.10.2.tar.gz", hash = "sha256:e4a96c8cc0339647ff9a5e0550d9f276fc5a01ffa276012b58ec108cfd7b8484"},
-]
-
-[package.dependencies]
-zipp = {version = ">=3.1.0", markers = "python_version < \"3.10\""}
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
-testing = ["flake8 (<5)", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)"]
-
-[[package]]
 name = "ipykernel"
 version = "6.21.1"
 description = "IPython Kernel for Jupyter"
@@ -1095,10 +1056,8 @@ files = [
 attrs = ">=17.4.0"
 fqdn = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
 idna = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
-importlib-resources = {version = ">=1.4.0", markers = "python_version < \"3.9\""}
 isoduration = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
 jsonpointer = {version = ">1.13", optional = true, markers = "extra == \"format-nongpl\""}
-pkgutil-resolve-name = {version = ">=1.3.10", markers = "python_version < \"3.9\""}
 pyrsistent = ">=0.14.0,<0.17.0 || >0.17.0,<0.17.1 || >0.17.1,<0.17.2 || >0.17.2"
 rfc3339-validator = {version = "*", optional = true, markers = "extra == \"format-nongpl\""}
 rfc3986-validator = {version = ">0.1.0", optional = true, markers = "extra == \"format-nongpl\""}
@@ -1143,7 +1102,6 @@ files = [
 ]
 
 [package.dependencies]
-importlib-metadata = {version = ">=4.8.3", markers = "python_version < \"3.10\""}
 jupyter-core = ">=4.12,<5.0.0 || >=5.1.0"
 python-dateutil = ">=2.8.2"
 pyzmq = ">=23.0"
@@ -1331,7 +1289,6 @@ files = [
 ]
 
 [package.dependencies]
-importlib-metadata = {version = ">=3.6", markers = "python_version < \"3.10\""}
 y-py = ">=0.5.3,<0.6.0"
 
 [package.extras]
@@ -1392,7 +1349,6 @@ files = [
 
 [package.dependencies]
 babel = ">=2.10"
-importlib-metadata = {version = ">=4.8.3", markers = "python_version < \"3.10\""}
 jinja2 = ">=3.0.3"
 json5 = ">=0.9.0"
 jsonschema = ">=4.17.3"
@@ -1579,7 +1535,6 @@ files = [
 beautifulsoup4 = "*"
 bleach = "*"
 defusedxml = "*"
-importlib-metadata = {version = ">=3.6", markers = "python_version < \"3.10\""}
 jinja2 = ">=3.0"
 jupyter-core = ">=4.7"
 jupyterlab-pygments = "*"
@@ -1886,18 +1841,6 @@ docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline
 tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
-name = "pkgutil-resolve-name"
-version = "1.3.10"
-description = "Resolve a name to an object."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "pkgutil_resolve_name-1.3.10-py3-none-any.whl", hash = "sha256:ca27cc078d25c5ad71a9de0a7a330146c4e014c2462d9af19c6b828280649c5e"},
-    {file = "pkgutil_resolve_name-1.3.10.tar.gz", hash = "sha256:357d6c9e6a755653cfd78893817c0853af365dd51ec97f3d358a819373bbd174"},
-]
-
-[[package]]
 name = "platformdirs"
 version = "3.0.0"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
@@ -1999,18 +1942,24 @@ tests = ["pytest"]
 
 [[package]]
 name = "pycairo"
-version = "1.21.0"
+version = "1.23.0"
 description = "Python interface for cairo"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pycairo-1.21.0-cp310-cp310-win_amd64.whl", hash = "sha256:549dd71345d5e966655c03dc0a063cf04807e9c17e73bc2af45adf744f39fcea"},
+    {file = "pycairo-1.23.0-cp310-cp310-win32.whl", hash = "sha256:564601e5f528531c6caec1c0177c3d0709081e1a2a5cccc13561f715080ae535"},
+    {file = "pycairo-1.23.0-cp310-cp310-win_amd64.whl", hash = "sha256:e7cde633986435d87a86b6118b7b6109c384266fd719ef959883e2729f6eafae"},
+    {file = "pycairo-1.23.0-cp311-cp311-win32.whl", hash = "sha256:3a71f758e461180d241e62ef52e85499c843bd2660fd6d87cec99c9833792bfa"},
+    {file = "pycairo-1.23.0-cp311-cp311-win_amd64.whl", hash = "sha256:2dec5378133778961993fb59d66df16070e03f4d491b67eb695ca9ad7a696008"},
+    {file = "pycairo-1.23.0-cp37-cp37m-win32.whl", hash = "sha256:d6bacff15d688ed135b4567965a4b664d9fb8de7417a7865bb138ad612043c9f"},
+    {file = "pycairo-1.23.0-cp37-cp37m-win_amd64.whl", hash = "sha256:ec305fc7f2f0299df78aadec0eaf6eb9accb90eda242b5d3492544d3f2b28027"},
+    {file = "pycairo-1.23.0-cp38-cp38-win32.whl", hash = "sha256:1a6d8e0f353062ad92954784e33dbbaf66c880c9c30e947996c542ed9748aaaf"},
+    {file = "pycairo-1.23.0-cp38-cp38-win_amd64.whl", hash = "sha256:82e335774a17870bc038e0c2fb106c1e5e7ad0c764662023886dfcfce5bb5a52"},
+    {file = "pycairo-1.23.0-cp39-cp39-win32.whl", hash = "sha256:a4b1f525bbdf637c40f4d91378de36c01ec2b7f8ecc585b700a079b9ff83298e"},
+    {file = "pycairo-1.23.0-cp39-cp39-win_amd64.whl", hash = "sha256:87efd62a7b7afad9a0a420f05b6008742a6cfc59077697be65afe8dc73ae15ad"},
+    {file = "pycairo-1.23.0.tar.gz", hash = "sha256:9b61ac818723adc04367301317eb2e814a83522f07bbd1f409af0dada463c44c"},
 ]
-
-[package.source]
-type = "url"
-url = "https://download.lfd.uci.edu/pythonlibs/archived/pycairo-1.21.0-cp310-cp310-win_amd64.whl"
 
 [[package]]
 name = "pycparser"
@@ -2771,22 +2720,6 @@ y-py = ">=0.5.3,<0.6.0"
 test = ["mypy", "pre-commit", "pytest", "pytest-asyncio", "websockets (>=10.0)"]
 
 [[package]]
-name = "zipp"
-version = "3.13.0"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "zipp-3.13.0-py3-none-any.whl", hash = "sha256:e8b2a36ea17df80ffe9e2c4fda3f693c3dad6df1697d3cd3af232db680950b0b"},
-    {file = "zipp-3.13.0.tar.gz", hash = "sha256:23f70e964bc11a34cef175bc90ba2914e1e4545ea1e3e2f67c079671883f9cb6"},
-]
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
-testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools", "more-itertools", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)"]
-
-[[package]]
 name = "zopfli"
 version = "0.2.2"
 description = "Zopfli module for python"
@@ -2863,5 +2796,5 @@ test = ["pytest"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.8"
-content-hash = "2a02a87b54cbc21cd3af8bf825ae73057ad9bab101dfd84c7df41c9b69e06c3a"
+python-versions = "^3.10"
+content-hash = "089d6d86fcb14a2c144ef22809f80b250bf16519d6632ae090bc0e66a49fc3fa"
